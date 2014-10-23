@@ -1,6 +1,7 @@
 
 #include "Player.h"
 #include "TollgateScene.h"
+#include "MonsterManager.h"
 
 #include "editor-support/cocostudio/CCSGUIReader.h"
 using namespace cocostudio;
@@ -41,6 +42,12 @@ bool TollgateScene::init()
 	initBG();
 
 	loadUI();
+
+	//创建怪物管理器
+	MonsterManager* monsterMgr = MonsterManager::create();
+	this->addChild(monsterMgr,4);
+
+
 
 	this->scheduleUpdate();
 
