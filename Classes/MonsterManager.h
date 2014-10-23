@@ -17,9 +17,14 @@ public:
 
 	virtual void update(float dt);
 
+
+public:
+	//绑定玩家对象
+	void bindPlayer(Player* player);
+
 private:
 	void createMonsters();
-
+	Player* m_player;
 private:
 	Vector<Monster*> m_monsterArr;
 

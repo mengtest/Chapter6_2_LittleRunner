@@ -40,10 +40,21 @@ void MonsterManager::update(float dt)
 			{
 				monster->hide();
 			}
+			else if (monster->isCollideWithPlayer(m_player))
+			{
+				m_player->hit();
+				monster->hide();
+			}
+
 		}
 		else
 		{
 			monster->show();
 		}
 	}
+}
+
+void MonsterManager::bindPlayer(Player* player)
+{
+	m_player = player;
 }

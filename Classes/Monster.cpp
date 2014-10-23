@@ -38,7 +38,17 @@ void Monster::reset()
 {
 	if (getSprite() != NULL)
 	{
-		setPosition(Point(1024 + CCRANDOM_0_1() *2000,200 - CCRANDOM_0_1() * 100));
+		setPosition(Point(1024 + CCRANDOM_0_1() *2000,300 - CCRANDOM_0_1() * 100));
 	}
 }
 
+bool Monster::isCollideWithPlayer(Player* player)
+{
+	//获取碰撞检查对象的boundingBox
+	Rect entityRect = player->getBoundingBox();
+
+	Point monsterPos = getPosition();
+
+	//判断boundingBox 和怪物中心是否有交集
+	return entityRect.containsPoint(monsterPos);
+}

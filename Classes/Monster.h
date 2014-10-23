@@ -2,6 +2,7 @@
 #define _MONSTER_H_
 
 #include "Entity.h"
+#include "Player.h"
 
 class Monster : public Entity
 {
@@ -17,6 +18,7 @@ public:
 	void reset();    //重置怪物数据
 	inline bool isAlive(){ return m_isAlive;};  //是否活动状态
 
+	bool isCollideWithPlayer(Player* player);
 private:
 	bool m_isAlive;
 

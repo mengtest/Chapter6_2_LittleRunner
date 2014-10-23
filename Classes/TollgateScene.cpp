@@ -46,7 +46,7 @@ bool TollgateScene::init()
 	//创建怪物管理器
 	MonsterManager* monsterMgr = MonsterManager::create();
 	this->addChild(monsterMgr,4);
-
+	monsterMgr->bindPlayer(m_player);
 
 
 	this->scheduleUpdate();
