@@ -25,6 +25,18 @@
     <Filter Include="LitterRunner第一篇\场景\关卡场景">
       <UniqueIdentifier>{f0b5cd2d-6b40-402f-a763-6a0c01cc23d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LitterRunner第一篇\管理器">
+      <UniqueIdentifier>{23e82ae0-837e-4aa9-849f-87d1c4deab60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\管理器\怪物管理器">
+      <UniqueIdentifier>{55567871-61fd-4df6-83a0-8b48bf602279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\实体\怪物">
+      <UniqueIdentifier>{d930b819-b532-4890-8f7c-e9e4fa2021a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\特效">
+      <UniqueIdentifier>{0c09dc6f-731b-431f-9abc-07c1921c1053}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -44,6 +56,15 @@
     </ClCompile>
     <ClCompile Include="..\Classes\TollgateScene.cpp">
       <Filter>LitterRunner第一篇\场景\关卡场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Monster.cpp">
+      <Filter>LitterRunner第一篇\实体\怪物</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MonsterManager.cpp">
+      <Filter>LitterRunner第一篇\管理器\怪物管理器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FlowWord.cpp">
+      <Filter>LitterRunner第一篇\特效</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +87,15 @@
       <Filter>LitterRunner第一篇\场景\关卡场景</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Classes\Monster.h">
+      <Filter>LitterRunner第一篇\实体\怪物</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MonsterManager.h">
+      <Filter>LitterRunner第一篇\管理器\怪物管理器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FlowWord.h">
+      <Filter>LitterRunner第一篇\特效</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
