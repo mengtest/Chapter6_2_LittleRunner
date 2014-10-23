@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇">
+      <UniqueIdentifier>{e9644b6a-be43-4553-a187-fe556156b8d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\实体">
+      <UniqueIdentifier>{e110456d-6ef0-4fed-a78a-7cf747e00f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\实体\主角">
+      <UniqueIdentifier>{be2ccfba-d32a-439c-8a33-efa18ca7f634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\场景">
+      <UniqueIdentifier>{9eecbf83-dbc8-407a-9b6b-9dac0f0a540a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LitterRunner第一篇\场景\关卡场景">
+      <UniqueIdentifier>{f0b5cd2d-6b40-402f-a763-6a0c01cc23d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity.cpp">
+      <Filter>LitterRunner第一篇\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>LitterRunner第一篇\实体\主角</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TollgateScene.cpp">
+      <Filter>LitterRunner第一篇\场景\关卡场景</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity.h">
+      <Filter>LitterRunner第一篇\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>LitterRunner第一篇\实体\主角</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TollgateScene.h">
+      <Filter>LitterRunner第一篇\场景\关卡场景</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+</Project>
