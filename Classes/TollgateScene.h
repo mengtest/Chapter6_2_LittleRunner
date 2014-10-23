@@ -31,6 +31,10 @@ private:
 
 	Player* m_player;      //主角
 
+private:
+	int m_iScore;         //分数
+	Text* m_scoreLab;     //分数标签
+	LoadingBar* m_hpBar;  //血量条 
 };
 
 

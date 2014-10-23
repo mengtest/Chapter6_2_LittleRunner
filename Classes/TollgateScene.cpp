@@ -51,6 +51,8 @@ bool TollgateScene::init()
 
 	this->scheduleUpdate();
 
+
+	m_iScore = 0;
 	return true;
 }
 
@@ -100,6 +102,15 @@ void TollgateScene::update(float delta)
 
 	m_bgSprite1->setPositionX(posX1);
 	m_bgSprite2->setPositionX(posX2);
+
+
+	//增加分数
+	m_iScore += 1;
+	m_scoreLab->setText(Value(m_iScore).asString());
+
+	//修改血量条
+	m_hpBar->setPercent(m_player->getiHp() / 1000.0f *100);
+
 }
 
 
@@ -112,6 +123,10 @@ void TollgateScene::loadUI()
 
 	//获取控件对象
 	auto jumpBtn = (Button*)Helper::seekWidgetByName(UI,"JumpBtn");
+	m_scoreLab = (Text*)Helper::seekWidgetByName(UI,"scoreLab");
+	m_hpBar = (LoadingBar*)Helper::seekWidgetByName(UI,"hpProgress");
+
+
 
 	//添加单击监听
 	jumpBtn->addTouchEventListener(this,toucheventselector(TollgateScene::jumpEvent));
