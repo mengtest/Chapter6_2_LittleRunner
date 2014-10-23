@@ -1,4 +1,6 @@
 #include "Player.h"
+#include "FlowWord.h"
+
 
 Player::Player()
 {
@@ -54,7 +56,9 @@ void Player::hit()
 	}
 
 	//¿ÛÑªÆ®×ÖÌØÐ§
-	
+	FlowWord* flowWord = FlowWord::create();
+	this->addChild(flowWord);
+	flowWord->showWord("-15",getSprite()->getPosition());
 
 
 	m_iHp -= 15;
