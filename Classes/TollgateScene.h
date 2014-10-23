@@ -5,10 +5,9 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-#include "editor-support/cocostudio/CCSGUIReader.h"
+
 #include "ui/CocosGUI.h"
 using namespace cocos2d::ui;
-using namespace cocostudio;
 
 
 class Player;

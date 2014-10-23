@@ -2,6 +2,9 @@
 #include "Player.h"
 #include "TollgateScene.h"
 
+#include "editor-support/cocostudio/CCSGUIReader.h"
+using namespace cocostudio;
+
 
 Scene* TollgateScene::createScene()
 {
@@ -40,6 +43,8 @@ bool TollgateScene::init()
 	loadUI();
 
 	this->scheduleUpdate();
+
+	return true;
 }
 
 void TollgateScene::initBG()
